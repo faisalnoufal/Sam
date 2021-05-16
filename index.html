@@ -72,7 +72,14 @@
 
   <body class="antialiased bg-gray-100 dark-mode:bg-gray-900">
     <div
-      class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800 fixed z-10 polo"
+      class="
+        w-full
+        text-gray-700
+        dark-mode:text-gray-200 dark-mode:bg-gray-800
+        fixed
+        z-10
+        polo
+      "
     >
       <a href="#" class="flex flex-col items-center polo">
         <img
@@ -83,10 +90,27 @@
       </a>
       <div
         x-data="{ open: false }"
-        class="flex flex-col max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between lg:flex-row md:px-6 lg:px-8"
+        class="
+          flex flex-col
+          max-w-screen-2xl
+          px-4
+          mx-auto
+          md:items-center
+          md:justify-between
+          lg:flex-row
+          md:px-6
+          lg:px-8
+        "
       >
         <div
-          class="flex flex-row items-center justify-between p-2 md:p-3 md:hidden"
+          class="
+            flex flex-row
+            items-center
+            justify-between
+            p-2
+            md:p-3
+            md:hidden
+          "
         >
           <a
             class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
@@ -109,7 +133,18 @@
           </a>
           <a
             href="/"
-            class="md:hidden text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+            class="
+              md:hidden
+              text-lg
+              font-semibold
+              tracking-widest
+              text-gray-900
+              uppercase
+              rounded-lg
+              dark-mode:text-white
+              focus:outline-none
+              focus:shadow-outline
+            "
             ><img
               class="w-12 h-12 md:w-16 md:h-16 lg:h-20 lg:w-20"
               src="./images/logo.png"
@@ -119,10 +154,42 @@
 
         <nav
           :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden py-1 md:flex md:justify-center md:flex-row"
+          class="
+            flex-col flex-grow
+            hidden
+            py-1
+            md:flex
+            md:justify-center
+            md:flex-row
+          "
         >
           <a
-            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            class="
+              font-bold
+              text-lg
+              shadow
+              inline
+              flex flex-row
+              items-center
+              w-full
+              px-2
+              py-2
+              mt-2
+              text-sm
+              font-semibold
+              text-left
+              bg-transparent
+              rounded-lg
+              md:w-auto
+              md:inline
+              md:mt-0
+              md:ml-4
+              text-yellow-400
+              hover:text-yellow-300
+              focus:text-yellow-300 focus:text-yellow-300
+              focus:outline-none
+              focus:shadow-outline
+            "
             href="/"
             >Home</a
           >
@@ -133,14 +200,48 @@
           >
             <button
               @click="open = !open"
-              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+              class="
+                font-bold
+                text-lg
+                shadow
+                inline
+                flex flex-row
+                items-center
+                w-full
+                px-2
+                py-2
+                mt-2
+                text-sm
+                font-semibold
+                text-left
+                bg-transparent
+                rounded-lg
+                md:w-auto
+                md:inline
+                md:mt-0
+                md:ml-4
+                text-yellow-400
+                hover:text-yellow-300
+                focus:text-yellow-300 focus:text-yellow-300
+                focus:outline-none
+                focus:shadow-outline
+              "
             >
               <span class="">About</span>
               <svg
                 fill="rgb(255, 215, 0)"
                 viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
-                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+                class="
+                  inline
+                  w-4
+                  h-4
+                  mt-1
+                  transition-transform
+                  duration-200
+                  transform
+                  md:-mt-1
+                "
               >
                 <path
                   fill-rule="evenodd"
@@ -157,14 +258,49 @@
               x-transition:leave="transition ease-in duration-75"
               x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute left-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+              class="
+                absolute
+                left-0
+                w-full
+                md:max-w-screen-sm
+                md:w-screen
+                mt-2
+                origin-top-right
+                z-30
+              "
             >
               <div
-                class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700"
+                class="
+                  px-2
+                  pt-2
+                  pb-4
+                  bg-white
+                  rounded-md
+                  shadow-lg
+                  dark-mode:bg-gray-700
+                "
               >
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="./about.html"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -176,7 +312,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="./vision_and_mission.html"
                   >
                     <div
@@ -190,7 +344,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="#noble"
                   >
                     <div
@@ -204,7 +376,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="./our_guide.html"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -216,7 +406,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="./executive_committee.html"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -228,7 +436,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="./old_student_association.html"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -251,14 +477,48 @@
           >
             <button
               @click="open = !open"
-              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+              class="
+                font-bold
+                text-lg
+                shadow
+                inline
+                flex flex-row
+                items-center
+                w-full
+                px-2
+                py-2
+                mt-2
+                text-sm
+                font-semibold
+                text-left
+                bg-transparent
+                rounded-lg
+                md:w-auto
+                md:inline
+                md:mt-0
+                md:ml-4
+                text-yellow-400
+                hover:text-yellow-300
+                focus:text-yellow-300 focus:text-yellow-300
+                focus:outline-none
+                focus:shadow-outline
+              "
             >
               <span class="">Institutions</span>
               <svg
                 fill="rgb(255, 215, 0)"
                 viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
-                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+                class="
+                  inline
+                  w-4
+                  h-4
+                  mt-1
+                  transition-transform
+                  duration-200
+                  transform
+                  md:-mt-1
+                "
               >
                 <path
                   fill-rule="evenodd"
@@ -275,12 +535,39 @@
               x-transition:leave="transition ease-in duration-75"
               x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute left-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+              class="
+                absolute
+                left-0
+                w-full
+                md:max-w-screen-sm
+                md:w-screen
+                mt-2
+                origin-top-right
+                z-30
+              "
             >
               <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="https://oemspalad.com"
                     target="_blank"
                   >
@@ -295,7 +582,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="#"
                   >
                     <div
@@ -309,7 +614,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="#"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -321,7 +644,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="#"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -337,12 +678,62 @@
             </div>
           </div>
           <a
-            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            class="
+              font-bold
+              text-lg
+              shadow
+              inline
+              flex flex-row
+              items-center
+              w-full
+              px-2
+              py-2
+              mt-2
+              text-sm
+              font-semibold
+              text-left
+              bg-transparent
+              rounded-lg
+              md:w-auto
+              md:inline
+              md:mt-0
+              md:ml-4
+              text-yellow-400
+              hover:text-yellow-300
+              focus:text-yellow-300 focus:text-yellow-300
+              focus:outline-none
+              focus:shadow-outline
+            "
             href="#"
             >Gallery</a
           >
           <a
-            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            class="
+              font-bold
+              text-lg
+              shadow
+              inline
+              flex flex-row
+              items-center
+              w-full
+              px-2
+              py-2
+              mt-2
+              text-sm
+              font-semibold
+              text-left
+              bg-transparent
+              rounded-lg
+              md:w-auto
+              md:inline
+              md:mt-0
+              md:ml-4
+              text-yellow-400
+              hover:text-yellow-300
+              focus:text-yellow-300 focus:text-yellow-300
+              focus:outline-none
+              focus:shadow-outline
+            "
             href="#"
             >Alumini</a
           >
@@ -354,14 +745,48 @@
           >
             <button
               @click="open = !open"
-              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+              class="
+                font-bold
+                text-lg
+                shadow
+                inline
+                flex flex-row
+                items-center
+                w-full
+                px-2
+                py-2
+                mt-2
+                text-sm
+                font-semibold
+                text-left
+                bg-transparent
+                rounded-lg
+                md:w-auto
+                md:inline
+                md:mt-0
+                md:ml-4
+                text-yellow-400
+                hover:text-yellow-300
+                focus:text-yellow-300 focus:text-yellow-300
+                focus:outline-none
+                focus:shadow-outline
+              "
             >
               <span class="">Contact</span>
               <svg
                 fill="rgb(255, 215, 0)"
                 viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
-                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+                class="
+                  inline
+                  w-4
+                  h-4
+                  mt-1
+                  transition-transform
+                  duration-200
+                  transform
+                  md:-mt-1
+                "
               >
                 <path
                   fill-rule="evenodd"
@@ -378,14 +803,49 @@
               x-transition:leave="transition ease-in duration-75"
               x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+              class="
+                absolute
+                right-0
+                w-full
+                md:max-w-screen-sm
+                md:w-screen
+                mt-2
+                origin-top-right
+                z-30
+              "
             >
               <div
-                class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700"
+                class="
+                  px-2
+                  pt-2
+                  pb-4
+                  bg-white
+                  rounded-md
+                  shadow-lg
+                  dark-mode:bg-gray-700
+                "
               >
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="contact.html"
                   >
                     <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
@@ -400,7 +860,25 @@
                     </div>
                   </a>
                   <a
-                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    class="
+                      flex
+                      row
+                      items-start
+                      rounded-lg
+                      bg-transparent
+                      p-2
+                      dark-mode:hover:bg-gray-600
+                      dark-mode:focus:bg-gray-600
+                      dark-mode:focus:text-white
+                      dark-mode:hover:text-white
+                      dark-mode:text-gray-200
+                      hover:text-gray-900
+                      focus:text-gray-900
+                      hover:bg-gray-200
+                      focus:bg-gray-200
+                      focus:outline-none
+                      focus:shadow-outline
+                    "
                     href="https://forms.gle/ZsysQkMuGcR1HafQ7"
                     target="”_blank”"
                   >
@@ -420,7 +898,32 @@
             </div>
           </div>
           <a
-            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-left bg-yellow-400 hover:bg-green-500 rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-gray-900 hover:text-white focus:outline-none focus:shadow-outline"
+            class="
+              font-bold
+              text-lg
+              shadow
+              inline
+              flex flex-row
+              items-center
+              w-full
+              px-2
+              py-2
+              mt-2
+              text-sm
+              font-semibold
+              text-left
+              bg-yellow-400
+              hover:bg-green-500
+              rounded-lg
+              md:w-auto
+              md:inline
+              md:mt-0
+              md:ml-4
+              text-gray-900
+              hover:text-white
+              focus:outline-none
+              focus:shadow-outline
+            "
             href="#"
             ><i class="fas fa-hands-helping" aria-hidden="true"></i>Sponsor a
             Child</a
@@ -432,10 +935,36 @@
     <!-- start hero section -->
     <div class="opolo bg-gray-50 flex-col flex justify-center">
       <div
-        class="max-w-7xl mx-auto py-12 px-12 sm:px-12 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        class="
+          max-w-7xl
+          mx-auto
+          py-12
+          px-12
+          sm:px-12
+          lg:py-16
+          lg:px-8
+          lg:flex
+          lg:items-center
+          lg:justify-between
+        "
       >
         <h1
-          class="flex flex-col justify-center mt-20 md:mt-32 sm:pt-12 md:pt-44 relative mb-4 text-3xl font-black leading-tight text-gray-500 sm:text-5xl xl:mb-8"
+          class="
+            flex flex-col
+            justify-center
+            mt-20
+            md:mt-32
+            sm:pt-12
+            md:pt-44
+            relative
+            mb-4
+            text-3xl
+            font-black
+            leading-tight
+            text-gray-500
+            sm:text-5xl
+            xl:mb-8
+          "
           style="
             background-image: url(./images/two-fingers.svg);
             background-repeat: no-repeat;
@@ -459,7 +988,21 @@
           <span class="flex justify-center pt-8">
             <a
               href="#"
-              class="shadow inline-flex items-center justify-center px-5 py-3 ring-8 ring-yellow-500 ring-opacity-50 text-base font-bold rounded-md text-gray-100 bg-gray-500 hover:bg-green-500"
+              class="
+                shadow
+                inline-flex
+                items-center
+                justify-center
+                px-5
+                py-3
+                ring-8 ring-yellow-500 ring-opacity-50
+                text-base
+                font-bold
+                rounded-md
+                text-gray-100
+                bg-gray-500
+                hover:bg-green-500
+              "
             >
               Donate
               <i class="fas fa-heart ml-2 text-red-500"></i>
@@ -474,13 +1017,43 @@
 
     <section class="polo text-gray-300 body-font">
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        class="
+          container
+          mx-auto
+          flex
+          px-5
+          py-24
+          md:flex-row
+          flex-col
+          items-center
+        "
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          class="
+            lg:flex-grow
+            md:w-1/2
+            lg:pr-24
+            md:pr-16
+            flex flex-col
+            md:items-start
+            md:text-left
+            mb-16
+            md:mb-0
+            items-center
+            text-center
+          "
         >
           <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200 bg-black rounded-lg"
+            class="
+              title-font
+              sm:text-4xl
+              text-3xl
+              mb-4
+              font-medium
+              text-gray-200
+              bg-black
+              rounded-lg
+            "
           >
             <i class="fas fa-info mr-2"></i>
             Edakkara Muslim Orphanage
@@ -498,7 +1071,21 @@
           <div class="flex justify-center">
             <a href="./about.html">
               <button
-                class="flex justify-center inline-flex text-white font-semibold bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+                class="
+                  flex
+                  justify-center
+                  inline-flex
+                  text-white
+                  font-semibold
+                  bg-yellow-400
+                  border-0
+                  py-2
+                  px-6
+                  focus:outline-none
+                  hover:bg-yellow-500
+                  rounded
+                  text-lg
+                "
               >
                 Read More..
               </button>
@@ -506,7 +1093,13 @@
           </div>
         </div>
         <div
-          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ring-4 ring-white ring-opacity-100"
+          class="
+            lg:max-w-lg
+            lg:w-full
+            md:w-1/2
+            w-5/6
+            ring-4 ring-white ring-opacity-100
+          "
         >
           <div class="splide">
             <div class="splide__track">
@@ -539,7 +1132,16 @@
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1
-              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-600 bg-white rounded-lg"
+              class="
+                title-font
+                sm:text-4xl
+                text-3xl
+                mb-4
+                font-medium
+                text-gray-600
+                bg-white
+                rounded-lg
+              "
             >
               <i class="fas fa-crown mr-2 flex flex-col"></i>
               Noble Predecessors
@@ -547,7 +1149,16 @@
             <div class="h-1 w-20 bg-yellow-500 rounded"></div>
           </div>
           <p
-            class="lg:w-1/2 w-full leading-relaxed text-gray-700 font-bold text-opacity-90 bg-white rounded"
+            class="
+              lg:w-1/2
+              w-full
+              leading-relaxed
+              text-gray-700
+              font-bold
+              text-opacity-90
+              bg-white
+              rounded
+            "
           >
             They were legendary and iconic in what they have done for this
             Orphanage.
@@ -566,7 +1177,12 @@
                 Haji C Jamaludheen Musliyar
               </h2>
               <h3
-                class="tracking-widest text-green-400 text-xs font-medium title-font"
+                class="
+                  tracking-widest
+                  text-green-400 text-xs
+                  font-medium
+                  title-font
+                "
               >
                 Former President
               </h3>
@@ -581,12 +1197,22 @@
               />
 
               <h2
-                class="text-lg text-gray-900 text-shadow font-semibold title-font mb-4"
+                class="
+                  text-lg text-gray-900 text-shadow
+                  font-semibold
+                  title-font
+                  mb-4
+                "
               >
                 Kalathingal Hamza Haji
               </h2>
               <h3
-                class="tracking-widest text-green-400 text-xs font-medium title-font"
+                class="
+                  tracking-widest
+                  text-green-400 text-xs
+                  font-medium
+                  title-font
+                "
               >
                 Former Secretary
               </h3>
@@ -604,7 +1230,12 @@
                 Puthiyara Kunjan
               </h2>
               <h3
-                class="tracking-widest text-green-400 text-xs font-medium title-font"
+                class="
+                  tracking-widest
+                  text-green-400 text-xs
+                  font-medium
+                  title-font
+                "
               >
                 Former Secretary
               </h3>
@@ -618,7 +1249,16 @@
     <!-- Slider main container -->
     <div class="sm:p-0 md:p-20 polo">
       <h1
-        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200 bg-black rounded-lg"
+        class="
+          title-font
+          sm:text-4xl
+          text-3xl
+          mb-4
+          font-medium
+          text-gray-200
+          bg-black
+          rounded-lg
+        "
       >
         <i class="fas fa-university mr-2"></i>
         EMO Institutions
@@ -634,18 +1274,39 @@
               <a href="#">
                 <div class="bg-gray-200 bg-opacity-20 p-6 rounded-lg">
                   <img
-                    class="h-68 rounded sm:w-12 md:w-full object-cover object-center mb-6"
+                    class="
+                      h-68
+                      rounded
+                      sm:w-12
+                      md:w-full
+                      object-cover object-center
+                      mb-6
+                    "
                     src="./images/institutions/oems.jpg"
                     alt="OEMS Palad"
                   />
 
                   <h2
-                    class="text-lg text-gray-200 font-semibold title-font mb-4 text-center"
+                    class="
+                      text-lg text-gray-200
+                      font-semibold
+                      title-font
+                      mb-4
+                      text-center
+                    "
                   >
                     Orphanage English Medium School Palad
                   </h2>
                   <h3
-                    class="tracking-widest text-yellow-400 text-xs font-medium title-font flex text-center p-4"
+                    class="
+                      tracking-widest
+                      text-yellow-400 text-xs
+                      font-medium
+                      title-font
+                      flex
+                      text-center
+                      p-4
+                    "
                   >
                     Orphanage English Medium School is a Co-Educational school
                     affiliated to CBSE syllabus. The school was established in
@@ -665,12 +1326,26 @@
                   />
 
                   <h2
-                    class="text-lg text-gray-200 font-semibold title-font mb-4 text-center"
+                    class="
+                      text-lg text-gray-200
+                      font-semibold
+                      title-font
+                      mb-4
+                      text-center
+                    "
                   >
                     MOLP School Munda
                   </h2>
                   <h3
-                    class="tracking-widest text-yellow-400 text-xs font-medium title-font flex text-center p-4"
+                    class="
+                      tracking-widest
+                      text-yellow-400 text-xs
+                      font-medium
+                      title-font
+                      flex
+                      text-center
+                      p-4
+                    "
                   >
                     MOLPS Munda Primary School (MMPS) located at Malappuram
                     Nilambur GUPS Marutha Vazhikkadavu is one of the best
@@ -689,12 +1364,26 @@
                   />
 
                   <h2
-                    class="text-lg text-gray-200 font-semibold title-font mb-4 text-center"
+                    class="
+                      text-lg text-gray-200
+                      font-semibold
+                      title-font
+                      mb-4
+                      text-center
+                    "
                   >
                     MOUP School Munda
                   </h2>
                   <h3
-                    class="tracking-widest text-yellow-400 text-xs font-medium title-font flex text-center p-4"
+                    class="
+                      tracking-widest
+                      text-yellow-400 text-xs
+                      font-medium
+                      title-font
+                      flex
+                      text-center
+                      p-4
+                    "
                   >
                     MOUPS Munda was established in 1979 and it is managed by the
                     Pvt. Aided. The school consists of Grades from 5 to 7. The
@@ -714,12 +1403,26 @@
                   />
 
                   <h2
-                    class="text-lg text-gray-200 font-semibold title-font mb-4 text-center"
+                    class="
+                      text-lg text-gray-200
+                      font-semibold
+                      title-font
+                      mb-4
+                      text-center
+                    "
                   >
                     EMOR Girls HSS Palad
                   </h2>
                   <h3
-                    class="tracking-widest text-yellow-400 text-xs font-medium title-font flex text-center p-4"
+                    class="
+                      tracking-widest
+                      text-yellow-400 text-xs
+                      font-medium
+                      title-font
+                      flex
+                      text-center
+                      p-4
+                    "
                   >
                     EMOR GIRLS HSS PALAD was established in 1995 and it is
                     managed by the Pvt. Aided. The school consists of Grades
@@ -733,7 +1436,6 @@
         </div>
       </div>
     </div>
-
     <!-- End slider main container -->
 
     <!-- footer  -->
@@ -743,7 +1445,14 @@
         <div class="flex flex-wrap md:text-left text-center order-first">
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
             <h1
-              class="title-font font-semibold text-gray-900 tracking-widest text-lg mb-3"
+              class="
+                title-font
+                font-semibold
+                text-gray-900
+                tracking-widest
+                text-lg
+                mb-3
+              "
             >
               <i class="fas fa-map-marker-alt text-red-500"></i>
               Edakkara Muslim Orphanage, Munda Post, Edakkara, Nilambur,
@@ -752,7 +1461,14 @@
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
             <h1
-              class="title-font font-medium text-gray-900 tracking-widest text-lg mb-3"
+              class="
+                title-font
+                font-medium
+                text-gray-900
+                tracking-widest
+                text-lg
+                mb-3
+              "
             >
               Contact us
             </h1>
@@ -791,7 +1507,14 @@
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2
-              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+              class="
+                title-font
+                font-medium
+                text-gray-900
+                tracking-widest
+                text-sm
+                mb-3
+              "
             >
               LINKS
             </h2>
@@ -824,12 +1547,28 @@
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2
-              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+              class="
+                title-font
+                font-medium
+                text-gray-900
+                tracking-widest
+                text-sm
+                mb-3
+              "
             >
               SUBSCRIBE
             </h2>
             <div
-              class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
+              class="
+                flex
+                xl:flex-nowrap
+                md:flex-nowrap
+                lg:flex-wrap
+                flex-wrap
+                justify-center
+                items-end
+                md:justify-start
+              "
             >
               <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                 <label
@@ -841,11 +1580,40 @@
                   type="text"
                   id="footer-field"
                   name="footer-field"
-                  class="w-full rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  class="
+                    w-full
+                    rounded
+                    border border-gray-300
+                    focus:bg-transparent
+                    focus:ring-2 focus:ring-yellow-200
+                    focus:border-yellow-500
+                    text-base
+                    outline-none
+                    text-gray-700
+                    py-1
+                    px-3
+                    leading-8
+                    transition-colors
+                    duration-200
+                    ease-in-out
+                  "
                 />
               </div>
               <button
-                class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"
+                class="
+                  lg:mt-2
+                  xl:mt-0
+                  flex-shrink-0
+                  inline-flex
+                  text-white
+                  bg-yellow-500
+                  border-0
+                  py-2
+                  px-6
+                  focus:outline-none
+                  hover:bg-yellow-600
+                  rounded
+                "
               >
                 Subscribe
               </button>
@@ -858,11 +1626,28 @@
       </div>
       <div class="polo">
         <div
-          class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+          class="
+            container
+            px-5
+            py-6
+            mx-auto
+            flex
+            items-center
+            sm:flex-row
+            flex-col
+          "
         >
           <a
             href="/"
-            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            class="
+              flex
+              title-font
+              font-medium
+              items-center
+              md:justify-start
+              justify-center
+              text-gray-900
+            "
           >
             <img
               src="./images/logo.png"
@@ -876,7 +1661,14 @@
             © 2021 Edakkara Muslim Orphanage
           </p>
           <span
-            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+            class="
+              inline-flex
+              sm:ml-auto
+              sm:mt-0
+              mt-4
+              justify-center
+              sm:justify-start
+            "
           >
             <a class="text-gray-500">
               <svg
