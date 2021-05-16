@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edakkara Muslim Orphanage | Munda</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHu7ryCt_r8PRcbxAU4w-gXqHUUw53Kx0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    <style>
+      #map {
+        /*border:solid yellow;*/
+        height: 450px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+
+      .polo {
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23000000' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23050505' href='%23s' y='2'/%3E%3Cuse fill='%23050505' href='%23s' x='1' y='2'/%3E%3Cuse fill='%230a0a0a' href='%23s' x='2' y='2'/%3E%3Cuse fill='%230a0a0a' href='%23s'/%3E%3Cuse fill='%230f0f0f' href='%23s' x='2'/%3E%3Cuse fill='%230f0f0f' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23141414'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23141414'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%231a1a1a'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23000000'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%231f1f1f'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%2311ff6a'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%2311ff6a'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%2311ff6a'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        /* background by SVGBackgrounds.com */
+      }
+      .opolo {
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        /* background by SVGBackgrounds.com */
+      }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <!-- <body
+    onload="myFunction()"
+    class="antialiased bg-gray-100 dark-mode:bg-gray-900"
+  > -->
+
+  <body class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+    <div
+      class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800 fixed z-10 polo"
+    >
+      <a href="#" class="flex flex-col items-center polo">
+        <img
+          class="hidden md:block md:h-24 lg:h-28"
+          src="./images/logo.png"
+          alt="EMO Logo"
+        />
+      </a>
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between lg:flex-row md:px-6 lg:px-8"
+      >
+        <div
+          class="flex flex-row items-center justify-between p-2 md:p-3 md:hidden"
+        >
+          <a
+            class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="rgb(255, 215, 0)" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="/"
+            class="md:hidden text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+            ><img
+              class="w-12 h-12 md:w-16 md:h-16 lg:h-20 lg:w-20"
+              src="./images/logo.png"
+              alt="EMO logo"
+          /></a>
+        </div>
+
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow hidden py-1 md:flex md:justify-center md:flex-row"
+        >
+          <a
+            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            href="/"
+            >Home</a
+          >
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            >
+              <span class="">About</span>
+              <svg
+                fill="rgb(255, 215, 0)"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute left-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+            >
+              <div
+                class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="./about.html"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i class="fas fa-info fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">About EMO</p>
+                      <p class="text-sm">Edakkara Muslim Orphanage</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="pta.html"
+                  >
+                    <div
+                      class="inline bg-teal-500 text-gray-500 rounded-lg p-3"
+                    >
+                      <i class="fas fa-rocket fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Vision & Mission</p>
+                      <p class="text-sm">Protect Orphans</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#noble"
+                  >
+                    <div
+                      class="inline bg-teal-500 text-gray-500 rounded-lg p-3"
+                    >
+                      <i class="fas fa-cubes fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Noble Predecessors</p>
+                      <p class="text-sm">CBSE Delhi</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="our_staffs.html"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Our Guide</p>
+                      <p class="text-sm">Sayed Hyderali Shihab Thangal</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="enrollment.html"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i class="fa fa-sitemap fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Executive Committee</p>
+                      <p class="text-sm">Total Students</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            >
+              <span class="">Institutions</span>
+              <svg
+                fill="rgb(255, 215, 0)"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute left-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+            >
+              <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    <div
+                      class="inline bg-teal-500 text-gray-500 rounded-lg p-3"
+                    >
+                      <i class="fas fa-university fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">OEMS Palad</p>
+                      <p class="text-sm">English Medium School</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    <div
+                      class="inline bg-teal-500 text-gray-500 rounded-lg p-3"
+                    >
+                      <i class="fas fa-university fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">EMOR</p>
+                      <p class="text-sm">Residential Girls HSS Palad</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i class="fas fa-university fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">MOLPS Munda</p>
+                      <p class="text-sm">Lower Primary School</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i class="fas fa-university fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">MOUPS Munda</p>
+                      <p class="text-sm">Upper Primary School</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            href="#"
+            >Gallery</a
+          >
+          <a
+            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            href="#"
+            >Alumini</a
+          >
+
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-yellow-400 hover:text-yellow-300 focus:text-yellow-300 focus:text-yellow-300 focus:outline-none focus:shadow-outline"
+            >
+              <span class="">Contact</span>
+              <svg
+                fill="rgb(255, 215, 0)"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30"
+            >
+              <div
+                class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="contact.html"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i
+                        class="fa fa-envelope-open fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Contact us</p>
+                      <p class="text-sm">Get in touch with us!</p>
+                    </div>
+                  </a>
+                  <a
+                    class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="https://forms.gle/ZsysQkMuGcR1HafQ7"
+                    target="”_blank”"
+                  >
+                    <div class="bg-teal-500 text-gray-500 rounded-lg p-3">
+                      <i
+                        class="fas fa-paper-plane fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Career oportunities</p>
+                      <p class="text-sm">Apply for a job</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="font-bold text-lg shadow inline flex flex-row items-center w-full px-2 py-2 mt-2 text-sm font-semibold text-center bg-yellow-400 hover:bg-green-500 rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 text-gray-900 hover:text-white focus:outline-none focus:shadow-outline"
+            href="#"
+            ><i class="fas fa-hands-helping" aria-hidden="true"></i>Sponsor a
+            Child</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <!-- start hero section -->
+    <section class="text-gray-600 body-font md:pt-32 lg:pt-24 h-full opolo">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-4xl text-3xl font-medium title-font mb-8 lg:mt-16 sm:mt-8 text-gray-900"
+          >
+            EMO Old Students Association (EMOOSA)
+          </h1>
+          <p class="lg:w-3/4 mx-auto leading-loose text-xl text-gray-800 pt-8">
+            More than 4,500 inmates have graduated from the Edakara Muslim
+            Orphanage, which has been working in the field of orphan care for
+            more than 50 years. More than 500 people, both teaching and
+            non-teaching staff served the institution. For years, a committee
+            called the EMO Old Students' Association (EMOOSA) has been working
+            systematically for their welfare. The Association is registered as
+            MPM / CA / 470/2020 on November 04, 2020, under the Societies Act.
+            The success of this association is since there are many EMO alumni
+            who hold high positions in the government sector and in the Gulf
+            countries. An EMO Old Student Welfare Fund has also been running for
+            five years under the association. The scheme is based on the
+            realization that the families of some of the alumni have died,
+            others have fallen ill, and their families were suffering from
+            severe financial hardship. The project also helped hundreds of
+            faculty and non-teaching staff who served at EMO. The fund raises
+            capital from alumni and staff members at the rate of Rs.100 / - per
+            month and Rs.5000/ - per annum from expatriates and government
+            employees. The Welfare Fund has disbursed assistance of about `1
+            crore over a period of five years. The association has also
+            developed a family safety plan aimed at the continuation of
+            voluntary social work.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="Sayed Hyderali Shihab Thangal"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/Shoukath Wandoor.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Shoukath Wandoor
+                </h2>
+                <h3 class="text-gray-500 mb-3">Chairman</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="Sayed Hameedali Shihab Thangal"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/Muhammad Babu.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Muhammad Babu
+                </h2>
+                <h3 class="text-gray-500 mb-3">President</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="Ibrahim P H"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/Abdul Rahiman MT.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Abdul Rahiman MT
+                </h2>
+                <h3 class="text-gray-500 mb-3">General Secretary</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="U Moideen Haji"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/Sulfiker Munda.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Sulfiker Munda
+                </h2>
+                <h3 class="text-gray-500 mb-3">Working Secretary</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="U Moideen Haji"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/Moideen Master.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Moideen Master
+                </h2>
+                <h3 class="text-gray-500 mb-3">Treasurer</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3 md:w-1/2">
+            <div
+              class="h-full flex flex-col items-center text-center bg-white shadow-lg hover:bg-transparent"
+            >
+              <img
+                alt="U Moideen Haji"
+                class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4"
+                src="./images/osa/sadique kattumunda.jpg"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-gray-900">
+                  Sadique Kattumunda
+                </h2>
+                <h3 class="text-gray-500 mb-3">Office Secretary</h3>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1
+              class="sm:text-4xl text-3xl font-medium title-font mb-8 lg:mt-16 sm:mt-8 text-gray-900"
+            >
+              Family Safety Plan
+            </h1>
+            <p
+              class="lg:w-3/4 mx-auto leading-loose text-xl text-gray-800 pt-8"
+            >
+              The idea behind Family Safety Plan is to maintaining the EMO
+              Alumni Welfare Fund with the active cooperation of its members to
+              help its members in the event of an accident. The project also
+              aims to streamline the organization of the Old Students'
+              Association (EMOOSA). Please see the brochure for further details
+              of the project.
+            </p>
+
+          <div class="flex flex-col text-center w-full my-12">
+            <h1
+              class="sm:text-4xl text-3xl font-medium title-font mb-16 text-gray-900"
+            >
+              Office bearers
+            </h1>
+            <div class="flex flex-col">
+              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div
+                  class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-24"
+                >
+                  <div
+                    class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+                  >
+                    <table class="min-w-full divide-y divide-gray-200">
+                      <thead class="bg-gray-100">
+                        <tr>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-bold text-gray-700 uppercase tracking-wider"
+                          >
+                            Name
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-bold text-gray-700 uppercase tracking-wider"
+                          >
+                            Designation
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-gray-200">
+                        <tr class="bg-white">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Shaukath Wandoor
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Chairman
+                          </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Muhammad Babu. P
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            President
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Noufal Karulayi, <br />
+                            Badaruddin Wandoor, <br />
+                            Sharif Valampuram
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider align-middle"
+                          >
+                            Vice Presidents
+                          </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            MT Abdurahman
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            General Secretary
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Zulfiqar Munda
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Working Secretary
+                          </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Yusuf CT, <br> 
+                            Abdul Kareem Mamankara
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider align-middle"
+                          >
+                            Joint Secretaries
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            MP Moineen Master
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Treasurer
+                          </td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Sadiq Kattumunda
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Office Secretary
+                          </td>
+                        </tr>
+                        <tr class="bg-white">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Ibrahim Manimooly, <br>
+                            Shihab Maliyekkal, <br> 
+                            Muneer Velumbiampadam, <br> 
+                            Sanoob Mambadu, <br> 
+                            Ashraf Ikkaran
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider align-middle"
+                          >
+                            Executive Members
+                          </td>
+                        </tr>
+                        <!-- <tr class="br-gray-50">
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            Grade 10
+                          </td>
+                          <td
+                            scope="col"
+                            class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                          >
+                            <i class="fa fa-inr" aria-hidden="true"></i>14550
+                          </td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    <section class="text-gray-600 body-font md:pt-32 lg:pt-24 h-full">
+      <div class="container px-5 py-20 md:py-16 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="sm:text-4xl text-3xl font-medium title-font mb-16 text-gray-900"
+          >
+            Fee Structure
+          </h1>
+          <div class="flex flex-col">
+            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div
+                class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+              >
+                <div
+                  class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+                >
+                  <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-100">
+                      <tr>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-bold text-gray-700 uppercase tracking-wider"
+                        >
+                          Grade
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-bold text-gray-700 uppercase tracking-wider"
+                        >
+                          Fee Per Annum
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                      <tr class="bg-white">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 1
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>10200
+                        </td>
+                      </tr>
+                      <tr class="br-gray-50">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 2
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>10200
+                        </td>
+                      </tr>
+                      <tr class="bg-white">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 3
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>10200
+                        </td>
+                      </tr>
+                      <tr class="br-gray-50">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 4
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>10200
+                        </td>
+                      </tr>
+                      <tr class="bg-white">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 5
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>12050
+                        </td>
+                      </tr>
+                      <tr class="br-gray-50">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 6
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>12050
+                        </td>
+                      </tr>
+                      <tr class="bg-white">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 7
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>12050
+                        </td>
+                      </tr>
+                      <tr class="br-gray-50">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 8
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>14550
+                        </td>
+                      </tr>
+                      <tr class="bg-white">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 9
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>14550
+                        </td>
+                      </tr>
+                      <tr class="br-gray-50">
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Grade 10
+                        </td>
+                        <td
+                          scope="col"
+                          class="px-6 py-3 text-center text-sm font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          <i class="fa fa-inr" aria-hidden="true"></i>14550
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- end hero seciton  -->
+
+    <!-- footer  -->
+    <footer class="text-gray-600 body-font bg-gradient-to-t from-yellow-100">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap md:text-center text-center order-first">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h1
+              class="title-font font-semibold text-gray-900 tracking-widest text-lg mb-3"
+            >
+              <i class="fas fa-map-marker-alt text-red-500"></i>
+              Edakkara Muslim Orphanage, Munda Post, Edakkara, Nilambur,
+              Malappuram, Kerala- 679-331
+            </h1>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h1
+              class="title-font font-medium text-gray-900 tracking-widest text-lg mb-3"
+            >
+              Contact us
+            </h1>
+            <nav class="list-none mb-10">
+              <li>
+                <a
+                  href="tel:+9104931275246"
+                  class="text-gray-600 hover:text-gray-800 font-semibold"
+                  ><i class="fas fa-phone"></i> +91 4931-275246</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+919061175246"
+                  class="text-gray-600 hover:text-gray-800 font-semibold"
+                  ><i class="fas fa-mobile text-blue-700"></i> +91 9061 175
+                  246</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-gray-800 font-semibold"
+                  ><i class="fab fa-whatsapp text-green-500"></i> +91 9061 175
+                  246</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:emotrust@gmail.com"
+                  class="text-gray-600 hover:text-gray-800 font-semibold"
+                  ><i class="fas fa-envelope"></i> emotrust@gmail.com</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              LINKS
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Vision & Mission</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">About EMO</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Our Guide</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Executive Committee</a
+                >
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            >
+              SUBSCRIBE
+            </h2>
+            <div
+              class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
+            >
+              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                <label
+                  for="footer-field"
+                  class="leading-7 text-sm text-gray-600"
+                  >Newsletter</label
+                >
+                <input
+                  type="text"
+                  id="footer-field"
+                  name="footer-field"
+                  class="w-full rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <button
+                class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"
+              >
+                Subscribe
+              </button>
+            </div>
+            <p class="text-gray-500 text-sm mt-2 md:text-center text-center">
+              Spread the word and support us.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="polo">
+        <div
+          class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <a
+            href="/"
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          >
+            <img
+              src="./images/logo.png"
+              alt="EMO logo"
+              class="h-12"
+              alt="EMO Logo"
+            />
+            <span class="ml-3 text-xl text-yellow-400">EMO</span>
+          </a>
+          <p class="text-sm text-yellow-400 sm:ml-6 sm:mt-0 mt-4">
+            © 2021 Edakkara Muslim Orphanage
+          </p>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="rgb(255, 215, 0)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="rgb(255, 215, 0)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="rgb(255, 215, 0)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="rgb(255, 215, 0)"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer  -->
+
+    <script src="https://webadder.com/webadder.min.js"></script>
+  </body>
+</html>
